@@ -6,9 +6,25 @@
 .container:hover {
   background-color: #23272a;
 }
-.message {
+.message-top {
   color: white;
   margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#author {
+  cursor: pointer;
+}
+#author:hover {
+  text-decoration: underline; 
+}
+.message-bottom, small {
+  color: #959595;
+}
+.message-bottom {
+  color: white;
+  margin: 10px;
+  margin-top: 0;
 }
 .avatar {
   cursor: pointer;
