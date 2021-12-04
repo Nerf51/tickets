@@ -18,6 +18,9 @@
 #author:hover {
   text-decoration: underline; 
 }
+#timestamp {
+  cursor: default;
+}
 .message-bottom, small {
   color: #959595;
 }
