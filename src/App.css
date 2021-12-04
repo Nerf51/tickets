@@ -13,3 +13,15 @@
 .avatar {
   cursor: pointer;
 }
+.loaded {
+  height: 100vh;
+  width: 100%;
+  background-color: #23272a;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notLoaded {
+  display: none;
+}
