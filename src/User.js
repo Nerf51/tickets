@@ -10,6 +10,7 @@ const User = () => {
             method: "GET",
             mode: "no-cors"
         }).then(res => res.json()).then(response => {
+            console.log(response)
             setAnimes(response.map(x => <picture className="container" key={x.date}><Avatar className="avatar" alt={x.author} src={x.avatar}/><p className="message">{x.author}: {x.message}</p><br></br></picture>))
         })
     }, [])
