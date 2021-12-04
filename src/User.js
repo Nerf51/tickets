@@ -13,7 +13,7 @@ const User = () => {
             setAnimes(response.map(x => <picture className="container" key={x.date}>
                 <Avatar className="avatar" alt={x.author} src={x.avatar}/>
                 <div>
-                    <p className="message-top"><b id="author">{x.author}</b> <small>{moment(x.timestamp).calendar()}</small></p>
+                    <p className="message-top"><b id="author">{x.author}</b> <small>{moment(x.date).calendar()}</small></p>
                     <p className="message-bottom">{x.message}</p>
                 </div>
                 <br></br>
