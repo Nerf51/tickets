@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 13px;
+}
+.container:hover {
+  background-color: #23272a;
+}
+.message {
+  color: white;
+  margin: 10px;
+}
+.avatar {
+  cursor: pointer;
+}
