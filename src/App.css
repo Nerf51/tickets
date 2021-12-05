@@ -44,3 +44,8 @@
 .notLoaded {
   display: none;
 }
+#imagen {
+  z-index: 75;
+  width: 512px;
+  height: 512px;
+}
