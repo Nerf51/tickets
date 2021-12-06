@@ -14,6 +14,19 @@ const User = () => {
     const [error, setError] = useState("notLoaded");
     useEffect(() => {
         fetch(`https://ticket-counter.herokuapp.com/tickets/${id}`).then(res => res.json()).then(response => {
+            /*response format from api rest: [
+                {
+                    avatar: "",
+                    date: "",
+                    author: "",
+                    message: ""
+                }
+            ]
+            error: {
+                status: 404,
+                message: "ticket not found"
+            }
+            */
             if(response.status){
                 setLoaded("notLoaded")
                 return setError("container-error")
